@@ -1,0 +1,26 @@
+:root{
+  --grey: #EDF2F7;
+  --orange: #EE6F44;
+  --sky-blue: #227EFF;
+  --white: #fff
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* This defines what 1rem is */
+  font-size: 62.5%;  /* 1 rem = 10px; */
+  /*62.5% is gotten from (10px/16px x 100) */
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+}
