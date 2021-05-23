@@ -12,6 +12,7 @@ import coke from '../images/coke.svg'
 import coffee from '../images/coffee.svg'
 import paperBag from '../images/paper-bag.svg'
 import box from '../images/box.svg'
+import PrimaryNav from '../components/PrimaryNav'
 
 const products = [curology, sneakers, coke, coffee, paperBag, box]
 
@@ -25,6 +26,7 @@ const Buy = () => {
         <Banner/>
         <Features/>
         <ProductList products={products} />
+        <PrimaryNav/>
       </main>
     </>
   )
