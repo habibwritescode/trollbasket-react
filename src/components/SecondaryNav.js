@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 import {ReactComponent as MapMarker} from '../icons/map-marker.svg'
