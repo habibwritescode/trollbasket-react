@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import styled from 'styled-components'
 
 import {ReactComponent as SearchIcon} from '../icons/search.svg'
@@ -26,9 +27,11 @@ const StyledSearchIcon = styled(SearchIcon)`
 `
 
 const SearchForm = () => {
+  const [input, setInput] = useState('')
+  
   return (
     <Form>
-      <Input type='search' placeholder='Search merchbuy' />
+      <Input value={input} onChange={(e) => setInput(e.target.value)} type='search' placeholder='Search merchbuy' />
       <StyledSearchIcon/>
     </Form>
   )

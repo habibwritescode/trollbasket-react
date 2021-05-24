@@ -35,8 +35,8 @@ const MinimumQty = styled.span`
 const ProductList = ({products}) => {
   return (
     <ProductsBox>
-      {products.map(product => (
-        <div>
+      {products.map((product, index) => (
+        <div key={index}>
           <img src={product} alt="" />
           <Description>Free sample small tote bag gucci fen...</Description>
           <Price>₦900 - ₦1,500</Price>
